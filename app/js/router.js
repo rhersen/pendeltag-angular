@@ -1,7 +1,5 @@
 angular.module("app").config(function($routeProvider, $locationProvider) {
 
-  $locationProvider.html5Mode(true);
-
   $routeProvider.when('/login', {
     templateUrl: 'login.html',
     controller: 'LoginController'
@@ -10,6 +8,16 @@ angular.module("app").config(function($routeProvider, $locationProvider) {
   $routeProvider.when('/home', {
     templateUrl: 'home.html',
     controller: 'HomeController'
+  });
+
+  $routeProvider.when('/stations', {
+    templateUrl: 'stations.html',
+    controller: 'StationsController'
+  });
+
+  $routeProvider.when('/departures/:siteid', {
+    templateUrl: 'departures.html',
+    controller: 'DeparturesController'
   });
 
   $routeProvider.when('/$resource/list-of-books', {
@@ -27,6 +35,6 @@ angular.module("app").config(function($routeProvider, $locationProvider) {
     }
   });
 
-  $routeProvider.otherwise({ redirectTo: '/login' });
+  $routeProvider.otherwise({ redirectTo: '/stations' });
 
 });

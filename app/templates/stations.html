@@ -1,0 +1,41 @@
+<div id="stations">
+  <nav class="pull-left">
+    <li class="siteid" ng-repeat="station in stations.northwest">
+      <a href="#/departures/{{station.SiteId}}">
+        {{ station.StopAreaName }}
+      </a>
+    </li>
+  </nav>
+
+  <nav class="pull-right">
+    <li class="siteid" ng-repeat="station in stations.northeast">
+      <a href="#/departures/{{station.SiteId}}">
+        {{ station.StopAreaName }}
+      </a>
+    </li>
+  </nav>
+
+  <nav class="center wide">
+    <li class="siteid" ng-repeat="station in stations.central">
+      <a href="#/departures/{{station.SiteId}}">
+        {{ station.StopAreaName }}
+      </a>
+    </li>
+  </nav>
+
+  <nav class="pull-left">
+    <li class="siteid" ng-repeat="station in stations.southwest">
+      <a href="#/departures/{{station.SiteId}}">
+        {{ station.StopAreaName }}
+      </a>
+    </li>
+  </nav>
+
+  <nav class="pull-right">
+    <li class="siteid" ng-repeat="station in stations.southeast">
+      <a href="#/departures/{{station.SiteId}}">
+        {{ station.StopAreaName }}
+      </a>
+    </li>
+  </nav>
+</div>

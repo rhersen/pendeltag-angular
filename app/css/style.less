@@ -1,7 +1,148 @@
-h1,h2,h3,h4,h5 {
-  text-align: center;
+body {
+  margin: 5px;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
 
-button {
-  margin-bottom: 0px !important;
+.table {
+  width: 100%;
+}
+
+@media only screen and (orientation: landscape) {
+  .table {
+    width: 50%;
+  }
+
+  body {
+    font-size: 18px;
+  }
+}
+
+.table time {
+  float: left;
+  clear: left;
+  width: 33.3%;
+}
+
+span.destination {
+  float: left;
+  width: 41.6%;
+}
+
+span.countdown {
+  float: left;
+  text-align: right;
+  width: 25%;
+}
+
+.direction2 {
+  color: midnightblue;
+}
+
+.direction2 time {
+  .direction2;
+}
+
+.direction2 span {
+  .direction2;
+}
+
+.direction1 {
+  color: maroon;
+}
+
+.direction1 time {
+  .direction1;
+}
+
+.direction1 span {
+  .direction1;
+}
+
+@media only screen and (min-width: 800px) and (orientation: portrait) {
+  body {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (orientation: landscape) {
+  body {
+    font-size: 24px;
+  }
+}
+
+div.pending {
+  background: lightgray;
+}
+
+div.departure {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6em;
+}
+
+#expired {
+  font-size: 0.8em;
+}
+
+li.siteid {
+  color: blue;
+  margin-right: 0.25em;
+  list-style-type: none;
+}
+
+li.current {
+  font-size: 1.4em;
+  margin-right: 0.25em;
+  list-style-type: none;
+}
+
+nav.refresh li {
+  display: inline;
+}
+
+div.link {
+  color: blue;
+  font-size: 1em;
+  float: right;
+}
+
+#id {
+  color: gray;
+  font-style: italic;
+  font-size: 0.5em;
+}
+
+.pull-left {
+  float: left;
+  width: 50%;
+}
+
+.pull-right {
+  float: left;
+  width: 50%;
+
+  > li {
+    text-align: right;
+  }
+}
+
+.narrow {
+  width: 35%;
+}
+
+.center {
+  float: left;
+  width: 30%;
+
+  > li {
+    text-align: center;
+  }
+}
+
+.wide {
+  width: 100%;
 }

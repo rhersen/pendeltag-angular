@@ -1,0 +1,20 @@
+<div>
+  <nav>
+    <li class="current">
+      {{StopAreaName}}
+    </li>
+  </nav>
+  <div class="table">
+    <div ng-repeat="train in trains" class="direction{{train.JourneyDirection}}">
+      <time>
+        {{train.ExpectedTime}}
+      </time>
+      <span class="destination">
+        {{train.Destination}}
+      </span>
+      <span class="countdown">
+        {{train.Countdown}}
+      </span>
+    </div>
+  </div>
+</div>

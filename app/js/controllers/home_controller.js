@@ -1,12 +1,12 @@
-angular.module("app").controller('HomeController', function($scope, $location, AuthenticationService) {
+angular.module("app").controller('HomeController', function($scope, $http) {
   $scope.title = "Home";
   $scope.message = "Mouse Over these images to see a directive at work";
-
-  var onLogoutSuccess = function(response) {
-    $location.path('/login');
-  };
+  $scope.numbers = [1, 2, 3, 4];
 
   $scope.logout = function() {
-    AuthenticationService.logout().success(onLogoutSuccess);
+    console.log('clicked');
+    $http.get('/stations').success(function(data) {
+      console.log('data received');
+    });
   };
 });
